@@ -7,10 +7,10 @@ O primeiro passo ter uma instalação funcional de Kafka. Para simplificar, vamo
 Tal material foi desenvolvido para [docker](https://www.docker.com/), portanto é indispensável que você tenha o mesmo instalado em sua máquina.<br/>
 Não se preocupe, se você nunca usou, não tem prática ou anda enferrujado, com uma leitura básica é possível fazer o básico, o que será mais que suficiente para este laboratório.<br/>
 
-> **A Confluent**
-> A Confluent é uma empresa americana cujos fundadores, [Jay Kreps](https://twitter.com/jaykreps), [Neha Narkhede](https://twitter.com/nehanarkhede) e [Jun Rao](https://twitter.com/junrao), originalmente no Linkedin desenharam e desenvolveram o Apache Kafka.
-> No início de 2011 o código do Kafka foi aberto à comunidade de software via a [Apache Software Foundation](https://www.apache.org/). (fonte: [Wikipedia](https://en.wikipedia.org/wiki/Apache_Kafka))
-> Em 2014 o três fundaram a Confluent, que hoje abriga hoje cerca de 70% dos commiters do código core do Kafka.
+> **A Confluent** <br/>
+> A Confluent é uma empresa americana cujos fundadores, [Jay Kreps](https://twitter.com/jaykreps), [Neha Narkhede](https://twitter.com/nehanarkhede) e [Jun Rao](https://twitter.com/junrao), originalmente no Linkedin desenharam e desenvolveram o Apache Kafka.<br/>
+> No início de 2011 o código do Kafka foi aberto à comunidade de software via a [Apache Software Foundation](https://www.apache.org/). (fonte: [Wikipedia](https://en.wikipedia.org/wiki/Apache_Kafka)).<br/>
+> Em 2014 o três fundaram a Confluent, que hoje abriga hoje cerca de 70% dos commiters do código core do Kafka.<br/>
 > Além disso, a Confluent desenvolve outras aplicações para o ecossistema Kafka, algumas [open source](https://github.com/confluentinc/), outras disponíveis no [Confluent Enterprise](https://www.confluent.io/product/confluent-enterprise/).
 
 Legal! Vamos para tela preta!!!
