@@ -3,7 +3,7 @@
 Neste laboratório vamos exercitar os conceitos mais básicos do Kafka.<br/>
 Trata-se de aprendizado pela prática então deixe a preguiça de lado.<br/>
 
-O primeiro passo ter uma instalação funcional de Kafka. Para simplificar, vamos utilizar o [material](https://github.com/confluentinc/cp-docker-images) disponibilizado pela Confluent.io no GitHub.com sob a licença Apache 2.0.<br/>
+O primeiro passo ter uma instalação funcional de Kafka. Para simplificar, vamos utilizar o [material](https://github.com/confluentinc/cp-docker-images) disponibilizado pela [Confluent](https://www.confluent.io/) no GitHub.com sob a licença Apache 2.0.<br/>
 Tal material foi desenvolvido para [docker](https://www.docker.com/), portanto é indispensável que você tenha o mesmo instalado em sua máquina.<br/>
 Não se preocupe, se você nunca usou, não tem prática ou anda enferrujado, com uma leitura básica é possível fazer o básico, o que será mais que suficiente para este laboratório.<br/>
 
@@ -42,7 +42,7 @@ docker-compose up -d
 ```
 É isso! Com um único comando você levantou duas instâncias de sistema operacional Linux, uma com um Zookeeper, outra com um Kafka, ambos standalone, isto é, não clusterizados.<br/>
 Ao executar o comando pela primeira vez, levará alguns poucos minutos para o Docker baixar as imagens corretas do repositório. Nas próximas vezes o comando retornará quase que instantaneamente.<br/>
-VocÊ também poderia utilizar o mesmo comando omitindo o `-d`, essa instrução significa 'detached', ou seja, o terminal será liberado após a inicialização dos serviços. A ausência do `-d` indica, claro, o contrário.
+Você também poderia utilizar o mesmo comando omitindo o `-d`, essa instrução significa **detached**, ou seja, o terminal será liberado após a inicialização dos serviços. A ausência do `-d` indica, claro, o contrário.
 
 A qualquer momento, quando conveniente, você pode interromper os serviços com o comando abaixo:
 ```
@@ -66,7 +66,6 @@ barbosa-mbp:kafka-single-node infobarbosa$ docker-compose ps
 ------------------------------------------------------------------------------------------------
 kafka-single-node_kafka_1       /etc/confluent/docker/run   Up      0.0.0.0:9092->9092/tcp
 kafka-single-node_zookeeper_1   /etc/confluent/docker/run   Up      2181/tcp, 2888/tcp, 3888/tcp
-barbosa-mbp:kafka-single-node infobarbosa$
 ```
 
 Se quiser saber apenas os serviços, basta executar o mesmo comando acrescido de `--services`
@@ -85,7 +84,7 @@ O que esse comando faz é abrir um shell diretamente na instância pra que você
 
 Para sair do shell e voltar o host, o Docker não vai aceitar coisas como `Ctrl+D` (exit) ou `Ctrl+C` (interrupt signal). Se fizer desta forma, o Docker vai entender que quer interromper a instância e literalmente ele fará isso! <br/>
 
-Para isso você deve emitir `Ctrl+P` + `Ctrl+Q` (É! Eu sei! Aceita que dói menos...).
+A saída do shell deve ser feita dessa forma: `Ctrl+P` + `Ctrl+Q` (É! Eu sei! Aceita que dói menos...).
 
 Uma vez com um shell aberto na máquina do Kafka, você já pode checar algumas coisas interessantes.
 ##### Checando o serviço do Kafka:
@@ -124,6 +123,6 @@ Esses dois arquivos contém os parâmetros necessários para a inicialização d
 A especificação de parâmetros para o Kafka pode ser encontrada [aqui](https://kafka.apache.org/documentation/#brokerconfigs).
 Já o Zookeeper tem suas configurações descritas [aqui](https://zookeeper.apache.org/doc/r3.4.9/zookeeperAdmin.html#sc_configuration).
 
-A rigor você não precisa se preocupar com essas configurações agora porque vamos visitá-las com alguma frequência durante o curso. Porém, é importante saber desde já que essas configurações afetam diretamente o desempenho tanto do cluster Kafka quanto de sua aplicação, portanto, conhecê-las pode ser a chave de uma solução bem sucedida. **Conhecê-las!** Não decorá-las. ;)
+A rigor você não precisa se preocupar com essas configurações agora porque vamos visitá-las com alguma frequência durante o curso. Porém, é importante saber desde já que essas configurações afetam diretamente o desempenho tanto do cluster Kafka quanto de sua aplicação, portanto, conhecê-las pode ser a chave de uma solução bem sucedida. **Conhecê-las**, não decorá-las! ;)
 
 Estamos prontos para as próximas aulas!
